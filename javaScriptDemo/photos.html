@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ul</title>
+  <style>
+    img {
+      float: left;
+      width: 33.3%;
+
+    }
+
+    li {
+      list-style: none;
+    }
+  </style>
+  <script src="photo.js">
+
+  </script>
+</head>
+
+<body>
+  <!-- <button id="btn">click </button> -->
+  <div id="div1">
+
+
+
+  </div>
+
+
+  <script>
+    var container = document.getElementById("div1");
+    let num = 0;
+    container.innerHTML += "<ul>";
+    let changeImg = () => {
+      container.innerHTML += "<li><img src='" + collection.data[num].url + "'></li>"
+      if (num > collection.data.length) {
+        clearInterval(itervel)
+      }
+      num++
+    }
+    container.innerHTML += "</ul>"
+    let itervel = setInterval(changeImg, 1000)
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="photo.js"></script>
+</head>
+<body id="b">
+    <div id="div1"></div>
+    <script>
+var ul=document.createElement("ul")
+//ul.setAttribute("id","imglist")
+document.getElementById("div1").appendChild(ul)
+pics.forEach((Element)=>{
+console.log(Element.url);
+let im=document.createElement("img")
+im.src=Element.url
+
+var li=document.createElement("li")
+li.appendChild(im)
+ul.appendChild(li)
+
+// document.getElementById("b").appendChild(im)
+
+    })
+    </script>
+    
+    
+</body>
+</html>

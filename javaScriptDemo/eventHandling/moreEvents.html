@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgb(255, 204, 127);
+            width: 200px;
+            height: 400px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" class="box">
+        <button id="btn1" type="button">button1</button>
+        <button id="btn1" type="button">button2</button>
+        <button id="btn1" type="button">button3</button>
+        <a href="cliclEvent.html" id ="link"> event</a>
+
+    </div>
+
+    <script>
+        let di=document.getElementById('div1')
+        let bt1=document.getElementById('btn1')
+        di.addEventListener("click",()=>{ 
+            console.log("div is being clicked");
+        })
+
+        bt1.addEventListener("click",(e)=>{ // e is built in event object
+            // console.log(e);
+            console.log("button1 is being clicked");
+            e.stopPropagation()
+            
+        })
+
+        let anchor=document.getElementById('link')
+        anchor.addEventListener('click',(e)=>{
+            e.preventDefault()
+            console.log("link is clicked");
+            console.log(e.target);
+
+
+        })
+
+    </script>
+</body>
+</html>

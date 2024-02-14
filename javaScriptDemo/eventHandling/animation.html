@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        img {
+          width: 100%;
+          height: 90%;
+          transition: opacity 0.5s ease;
+        }
+        </style>
+</head>
+<body>
+    <img src="" alt="" id="img">
+    <script>
+
+        const images=["../../images/dancing.jpg",
+                      "../../images/Designer.png",
+                      "../../images/singing.jpg",
+                    "../../images/drama.jpg"];
+
+        const imageElement=document.getElementById('img')
+
+        let currentIndex=0;
+        function changeImage(){
+            imageElement.src=images[currentIndex];
+            currentIndex=(currentIndex+1)%images.length
+
+        }
+
+        setInterval(changeImage,1000)
+        changeImage()
+
+    </script>
+    
+</body>
+</html>

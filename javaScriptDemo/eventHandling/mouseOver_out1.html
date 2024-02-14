@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script>
+        function f1(){
+            document.getElementById('img1').src="../../images/iphone.jpeg"
+        }
+        function f2(){
+            document.getElementById('img1').src="../../images/drama.jpg"
+        }
+    </script> -->
+
+    <!-- <script>
+         document.getElementById('img1').src="../../images/iphone.jpeg"
+    </script> -->
+
+
+</head >
+<body style="background-color:#212121">
+    <!-- <img src="../../images/drama.jpg"  style="width: 25%; height: 25%;" id="img1" onmouseover="f1()" onmouseout="f2()" > -->
+
+    <img src="../../images/drama.jpg"  style="width: 25%; height: 25%;" id="img2" >
+    <script>
+        let pic=document.getElementById('img2')
+        pic.addEventListener("mouseover",function(){
+            pic.src="../../images/iphone.jpeg"
+        })
+        pic.addEventListener("mouseout",function(){
+            pic.src="../../images/drama.jpg"
+        })
+   </script>
+
+
+</body>
+</html>

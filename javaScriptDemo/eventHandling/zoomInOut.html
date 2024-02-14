@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoomOut</title>
+
+    
+
+
+</head >
+<body style="background-color:#212121">
+
+    <img src="../../images/drama.jpg"  style="width: 25%; height: 25%;" id="img2" >
+    <script>
+        let pic=document.getElementById('img2')
+        pic.addEventListener("mouseover",function(){
+            pic.style="width: 50%; height: 50%;"
+           
+        })
+        pic.addEventListener("mouseout",function(){
+            pic.style="width: 25%; height: 25%;"
+            
+        })
+   </script>
+
+
+</body>
+</html>

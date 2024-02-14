@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change Icon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css" integrity="sha512-ykRBEJhyZ+B/BIJcBuOyUoIxh0OfdICfHPnPfBy7eIiyJv536ojTCsgX8aqrLQ9VJZHGz4tvYyzOM0lkgmQZGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.jpeg">
+</head>
+<body>
+    <div class="mt-4 mb-4" style="text-align: center; background-color: aqua;">
+        <i id="icon" class="fas fa-lock" onclick="changeIcon()" style="height: 50px;width: 50px;font-size: 50px;"></i>
+    </div>
+   <h3 class="bg-danger text-center m-4" > Click above icon to lock and unlock</h3>
+    <script>
+    function changeIcon() {
+        var icon = document.getElementById('icon');
+    
+     
+        if (icon.classList.contains('fa-lock')) {
+            icon.classList.remove('fa-lock');
+            icon.classList.add('fa-lock-open');
+        } else {
+            icon.classList.remove('fa-lock-open');
+            icon.classList.add('fa-lock');
+        }
+    }
+    </script>
+    
+</body>
+</html>
