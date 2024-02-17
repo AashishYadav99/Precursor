@@ -1,4 +1,6 @@
 
+import Contact_us from "./components/Contact_us";
+import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 function App() {
@@ -6,7 +8,9 @@ function App() {
     <>
     <Navbar  />
     <main>
-      <p>this is main content</p>
+      
+      <Feedback />
+      <Contact_us />
 
     </main>
     <Footer />
